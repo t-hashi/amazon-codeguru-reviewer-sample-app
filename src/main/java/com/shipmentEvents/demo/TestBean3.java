@@ -20,4 +20,13 @@ public class TestBean3 {
 	    Timestamp timestamp = new Timestamp(millis);
 		return timestamp.toString();
 	}
+	
+	private int value;
+
+    /**
+     * Returns a unique value.
+     */
+    public int getNext() {
+        return value++;
+    }
 }

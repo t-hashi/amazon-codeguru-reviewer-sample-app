@@ -32,7 +32,7 @@ public class TestServlet3 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		TestBean3 bean = new TestBean3();
-		out.println(bean.doBusiness());
+		out.println(bean.getNext());
 	}
 
 	/**
