@@ -6,14 +6,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class TestBean3 {
 
-	public String doBusiness() {
-		// not thread safe.
-		//final ConcurrentHashMap<String, String> map = new ConcurrentHashMap<String, String>();
-		HashMap<String, String> map = new HashMap<String, String>();
-		map.put("message", getTimeStamp());
-		
-		return map.get("message");
-	}
 	
 	private String getTimeStamp() {
 		long millis = System.currentTimeMillis();
